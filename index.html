@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-title">
+            <div class="weather-title-icons">
+                <div class="hamburger-menu" id="hamburgerMenu">
+                    <div class="hamburger" id="hamburgerBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-content" id="menuContent">
+                        <input type="text" id="cityInput" placeholder="Enter city name">
+                        <button id="getWeatherBtn">Get Weather</button>
+                    </div>
+                </div>
+                <div class="weather-title-center">
+                    <span>Weather App</span>
+                </div>
+                <div class="dark-mode-toggle">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="darkModeSwitch">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="weather-card">
+            <div id="weatherMain">
+                <div id="weatherResult"></div>
+                <div id="loadingSpinner" class="spinner" style="display:none;"></div>
+            </div>
+            <div id="forecastSection">
+                <h3>Next 5 Days</h3>
+                <div id="forecastCards"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
